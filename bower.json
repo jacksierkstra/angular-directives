@@ -1,0 +1,28 @@
+{
+  "name": "angular-directives",
+  "version": "0.0.1",
+  "authors": [
+    "jacksierkstra <jacksierkstra@gmail.com>"
+  ],
+  "description": "A showcase where some directives are going to be shown.",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "AngularJs",
+    "Directives",
+    "Bootstrap"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/jacksierkstra",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.6",
+    "bootstrap": "~3.3.5"
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="eng" ng-app="MyDirectiveApp">
+<head>
+  <meta charset="utf-8">
+  <title>
+    Angular Directives
+  </title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="bootstrap" charset="utf-8">
+  <link rel="stylesheet" href="templates/personcard.css" media="screen" title="bootstrap" charset="utf-8">
+  <script src="bower_components/angular/angular.js" charset="utf-8"></script>
+  <script src="controllers.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="container">
+
+    <br>
+    <div class="jumbotron">
+      <h3>This is a Angular 1.xx application which will demonstrate some directives (custom-made).</h3>
+    </div>
+
+    <div class="col-md-12" ng-controller="PersonCardController">
+      <h2>Personal card</h2>
+      <person-card></person-card>
+    </div>
+
+    <div class="col-md-12" ng-controller="PersonCardController">
+      <h2>A list of personal cards</h2>
+      <person-card ng-repeat="person in persons"></person-card>
+    </div>
+  </div>
+</body>
