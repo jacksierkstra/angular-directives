@@ -6,26 +6,35 @@
     Angular Directives
   </title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="bootstrap" charset="utf-8">
-  <link rel="stylesheet" href="templates/personcard.css" media="screen" title="bootstrap" charset="utf-8">
   <script src="bower_components/angular/angular.js" charset="utf-8"></script>
-  <script src="controllers.js" charset="utf-8"></script>
+
+  <!-- Includes for personal card(s).-->
+  <link rel="stylesheet" href="templates/personCard.css" media="screen" title="bootstrap" charset="utf-8">
+  <script src="personCard.js" charset="utf-8"></script>
+
+
 </head>
 <body>
   <div class="container">
 
     <br>
     <div class="jumbotron">
-      <h3>This is a Angular 1.xx application which will demonstrate some directives (custom-made).</h3>
+      <h3>This is an Angular 1.xx application which will demonstrate some directives (custom-made).</h3>
     </div>
 
-    <div class="col-md-12" ng-controller="PersonCardController">
-      <h2>Personal card</h2>
-      <person-card></person-card>
+    <div class="row">
+      <div class="col-md-12" ng-controller="PersonCardController">
+        <h2>Personal card</h2>
+        <person-card></person-card>
+      </div>
     </div>
 
-    <div class="col-md-12" ng-controller="PersonCardController">
-      <h2>A list of personal cards</h2>
-      <person-card ng-repeat="person in persons"></person-card>
+    <div class="row">
+      <div class="col-md-12" ng-controller="PersonCardController">
+        <h2>A list of personal cards</h2>
+        <person-card ng-repeat="person in persons"></person-card>
+      </div>
     </div>
+
   </div>
 </body>

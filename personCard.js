@@ -3,7 +3,7 @@
 
   angular.module('MyDirectiveApp', [])
   .controller('PersonCardController', ['$scope', function ($scope){
-
+    
     $scope.person = {
       name : 'Jack Sierkstra',
       description : 'A short description goes here.',
