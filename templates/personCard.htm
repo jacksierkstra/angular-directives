@@ -1,14 +1,14 @@
 <div class="col-sm-6 col-md-3">
 <div class="panel panel-default panel-card">
   <div class="panel-heading">
-      <img src="{{ person.backgroundCoverImgUrl }}" />
+      <img ng-src="{{ person.backgroundCoverImgUrl }}" />
       <button class="btn btn-primary btn-sm" role="button">Follow</button>
   </div>
   <div class="panel-figure">
-      <img class="img-responsive img-circle" src="{{ person.imgUrl }}" />
+      <img class="img-responsive img-circle" ng-src="{{ person.imgUrl }}" />
   </div>
   <div class="panel-body text-center">
-      <h4 class="panel-header"><a href="{{ person.twitterUrl }}">{{ person.name }}</a></h4>
+      <h4 class="panel-header"><a ng-href="{{ person.twitterUrl }}">{{ person.name }}</a></h4>
       <small>{{ person.description }}</small>
   </div>
 </div>
